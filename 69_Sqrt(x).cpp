@@ -9,6 +9,13 @@ public:
         }
         return y-1;
         /*
+        a. 
+          k = x/2 # initial value
+          while (abs(k*k - x)>=0.1)    
+            k = k  - (k*k - x)/(2 * k) #update ;
+          return int(k) ;
+        
+        b.
         float beg=0,mid=0,z,t=1;
         if(end==1)
         {
