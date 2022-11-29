@@ -1,0 +1,14 @@
+class Solution {
+    public int twoEggDrop(int n) 
+    {
+       int s=0,i=1;
+        while(n>0)
+        {
+            n=n-i;
+            i++;
+            s++;
+        }
+        return s;
+    }
+}
+
