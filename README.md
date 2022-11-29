@@ -1,4 +1,4 @@
 # LeetCode
 code for leetcode
 
-In the repository, I put all my solution on Leetcode to help everyone. Only Solution Class in written in here.
+In the repository, I put all my solution on Leetcode. Only Solution Class in written in here.
