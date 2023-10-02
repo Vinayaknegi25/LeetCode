@@ -1,3 +1,27 @@
+// Alternate approach using map
+class Solution {
+public:
+    int findDuplicate(vector<int>& nums) {
+        map<int,int> map;
+        int copy=0;
+        for(auto itr: nums)
+        {
+            map[itr]++;
+        }
+        for(auto itr:map)
+        {
+            if(itr.second>1)
+            {
+                copy=itr.first;
+                break;
+            }
+
+        }
+        return copy;
+    }
+};
+
+
 class Solution {
 public:
     int findDuplicate(vector<int>& nums) 
