@@ -21,3 +21,27 @@ public:
     }
 
 };
+
+// Using stack easy method for me atleast
+
+ListNode *temp=head;
+    int c=0;
+    stack<int> st;
+    while(temp != NULL)
+    {
+        st.push(temp->val);
+        c++;
+        temp=temp->next;
+    }
+    temp=head;
+    while(temp!=NULL)
+    {
+        if(temp->val != st.top())
+        {
+            return false;
+            break;
+        }
+        st.pop();
+        temp=temp->next;
+    }
+    return true;
